@@ -16,10 +16,22 @@ module.exports = {
       userId: {
         type: Sequelize.INTEGER,
         allowNull: false,
+        reference: {
+          model: "users",
+          key: "id",
+        },
+        onUpdate: "CASCADE",
+        onDelete: "CASCADE",
       },
       kitId: {
         type: Sequelize.INTEGER,
         allowNull: false,
+        references: {
+          model: "kits",
+          key: "id",
+        },
+        onUpdate: "CASCADE",
+        onDelete: "CASCADE",
       },
       createdAt: {
         allowNull: false,

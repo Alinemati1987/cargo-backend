@@ -11,10 +11,22 @@ module.exports = {
       carModelId: {
         type: Sequelize.INTEGER,
         allowNull: false,
+        reference: {
+          model: "carModels",
+          key: "id",
+        },
+        onUpdate: "CASCADE",
+        onDelete: "CASCADE",
       },
       kitId: {
         type: Sequelize.INTEGER,
         allowNull: false,
+        reference: {
+          model: "kits",
+          key: "id",
+        },
+        onUpdate: "CASCADE",
+        onDelete: "CASCADE",
       },
       createdAt: {
         allowNull: false,
