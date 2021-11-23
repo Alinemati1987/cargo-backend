@@ -25,10 +25,10 @@ module.exports = {
         type: Sequelize.INTEGER,
       },
       fuel: {
-        type: Sequelize.INTEGER,
+        type: Sequelize.FLOAT,
       },
       acceleration: {
-        type: Sequelize.INTEGER,
+        type: Sequelize.FLOAT,
       },
       carPrice: {
         type: Sequelize.INTEGER,

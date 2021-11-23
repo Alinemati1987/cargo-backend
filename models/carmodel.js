@@ -20,9 +20,9 @@ module.exports = (sequelize, DataTypes) => {
       modelName: { type: DataTypes.STRING, allowNull: false, unique: true },
       imageUrl: { type: DataTypes.STRING, allowNull: false },
       soundUrl: { type: DataTypes.STRING, allowNull: false },
-      capacity: DataTypes.INTEGER,
-      fuel: DataTypes.INTEGER,
-      acceleration: DataTypes.INTEGER,
+      capacity: DataTypes.STRING,
+      fuel: DataTypes.FLOAT,
+      acceleration: DataTypes.FLOAT,
       carPrice: { type: DataTypes.STRING, allowNull: false },
     },
     {
