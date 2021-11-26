@@ -23,22 +23,36 @@ router.get("/", async (req, res, next) => {
       include: { model: carModel, include: { model: kit } },
     });
 
-    res.send(allCarBrands);
+    !allCarBrands
+      ? res.status(404).send("No car brand defined")
+      : res
+          .status(200)
+          .send({ message: "Request for car brands recieved", allCarBrands });
   } catch (e) {
     res.send("Error is:", e.message);
     next(e);
   }
 });
 
-router.get("/purchase", async (req, res) => {
+router.get("/:name", async (req, res, next) => {
   try {
-    const order = await user.findByPk(6, {
-      include: { model: kit },
+    const name = req.params.name;
+
+    const specificBrandList = await carBrand.findAll({
+      where: { brandName: name },
+      include: {
+        model: carModel,
+      },
     });
 
-    res.send(order);
+    !specificBrandList
+      ? res.status(404).send("No Car Model was found")
+      : res
+          .status(200)
+          .send({ message: "specif list created", specificBrandList });
   } catch (error) {
     console.log("Error", error);
+    next(error);
   }
 });
 

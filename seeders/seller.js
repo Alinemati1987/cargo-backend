@@ -7,21 +7,23 @@ module.exports = {
       [
         {
           companyName: "Sample company one",
-          address: "Cambridgelaan 200",
-          phone: "065342434",
-          logoUrl: "url.companyOne",
-          createdAt: new Date(),
-          updatedAt: new Date(),
-          userId: 2,
-        },
-        {
-          companyName: "Sample company two",
           address: "Amsterdamweg 657",
           phone: "06534243",
-          logoUrl: "url.companyTwo",
+          logoUrl:
+            "https://png.pngtree.com/template/20191029/ourmid/pngtree-awesome-letter-s-logo-image_324299.jpg",
           createdAt: new Date(),
           updatedAt: new Date(),
           userId: 3,
+        },
+        {
+          companyName: "Thor",
+          address: "Cambridgelaan 200",
+          phone: "065342434",
+          logoUrl:
+            "https://www.pngitem.com/pimgs/m/485-4852378_sample-logo-png-transparent-png.png",
+          createdAt: new Date(),
+          updatedAt: new Date(),
+          userId: 2,
         },
       ],
       {}

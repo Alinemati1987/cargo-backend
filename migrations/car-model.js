@@ -22,10 +22,13 @@ module.exports = {
         allowNull: false,
       },
       capacity: {
-        type: Sequelize.INTEGER,
+        type: Sequelize.FLOAT,
       },
       fuel: {
         type: Sequelize.FLOAT,
+      },
+      speed: {
+        type: Sequelize.INTEGER,
       },
       acceleration: {
         type: Sequelize.FLOAT,
