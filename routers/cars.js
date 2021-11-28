@@ -34,7 +34,7 @@ router.get("/", async (req, res, next) => {
   }
 });
 
-router.get("/:name", async (req, res, next) => {
+router.get("/brands/:name", async (req, res, next) => {
   try {
     const name = req.params.name;
 
@@ -45,7 +45,7 @@ router.get("/:name", async (req, res, next) => {
       },
     });
 
-    !specificBrandList
+    specificBrandList.length === 0
       ? res.status(404).send("No Car Model was found")
       : res
           .status(200)
