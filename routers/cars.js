@@ -20,7 +20,7 @@ const router = new Router();
 router.get("/", async (req, res, next) => {
   try {
     const allCarBrands = await carBrand.findAll({
-      include: { model: carModel, include: { model: kit } },
+      // include: { model: carModel, include: { model: kit } },
     });
 
     !allCarBrands
@@ -49,7 +49,31 @@ router.get("/brands/:name", async (req, res, next) => {
       ? res.status(404).send("No Car Model was found")
       : res
           .status(200)
-          .send({ message: "specif list created", specificBrandList });
+          .send({ message: "specific list created", specificBrandList });
+  } catch (error) {
+    console.log("Error", error);
+    next(error);
+  }
+});
+
+router.get("/brands/:name/:id", async (req, res, next) => {
+  try {
+    const name = req.params.name;
+    const id = req.params.id;
+
+    const specificCarById = await carBrand.findOne({
+      where: { brandName: name },
+      include: {
+        model: carModel,
+        where: { id: id },
+      },
+    });
+
+    specificCarById.length === 0
+      ? res.status(404).send("No Car was found")
+      : res
+          .status(200)
+          .send({ message: "specific car is found", specificCarById });
   } catch (error) {
     console.log("Error", error);
     next(error);
