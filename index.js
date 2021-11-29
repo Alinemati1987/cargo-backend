@@ -7,6 +7,7 @@ const authMiddleWare = require("./auth/middleware");
 
 const authRouter = require("./routers/auth");
 const carsRouter = require("./routers/cars");
+const kitsRouter = require("./routers/kits");
 
 const app = express();
 app.use(express.json());
@@ -43,5 +44,6 @@ app.post("/authorized_post_request", authMiddleWare, (req, res) => {
 
 app.use("/", authRouter);
 app.use("/", carsRouter);
+app.use("/kits", kitsRouter);
 
 app.listen(PORT, console.log(`Server is listening on port: ${PORT}`));
