@@ -20,7 +20,7 @@ const router = new Router();
 router.get("/", async (req, res, next) => {
   try {
     const allCarBrands = await carBrand.findAll({
-      // include: { model: carModel, include: { model: kit } },
+      include: { model: carModel }, //, include: { model: kit }
     });
 
     !allCarBrands

@@ -16,6 +16,7 @@ module.exports = (sequelize, DataTypes) => {
       brandName: { type: DataTypes.STRING, allowNull: false, unique: true },
       brandLogoUrl: { type: DataTypes.STRING, allowNull: false },
       buyUrl: { type: DataTypes.STRING, allowNull: false, unique: true },
+      ribbonUrl: { type: DataTypes.STRING, allowNull: false, unique: true },
     },
     {
       sequelize,

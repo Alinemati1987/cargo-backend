@@ -9,7 +9,8 @@ module.exports = {
           modelName: "R8",
           imageUrl:
             "https://www.pngkit.com/png/full/273-2731532_audi-r8-new-car-image-audi-r8-transparent.png",
-          soundUrl: "url.audi.r8sound",
+          soundUrl:
+            "https://res.cloudinary.com/dkdzt4lca/video/upload/v1638264023/Carso/Audi_R8_Engine_Sound_nflmrl.mp3",
           capacity: 5200,
           fuel: 12.9,
           speed: 331,
@@ -23,7 +24,8 @@ module.exports = {
           modelName: "RS3",
           imageUrl:
             "https://w7.pngwing.com/pngs/168/50/png-transparent-audi-rs3-car-audi-sportback-concept-2018-audi-rs-3-audi-compact-car-blue-sedan.png",
-          soundUrl: "url.audi.rs3sound",
+          soundUrl:
+            "https://res.cloudinary.com/dkdzt4lca/video/upload/v1638264024/Carso/190131_Audi_RS3neu_engineonidleengineoff_zi0398.wav",
           capacity: 2500,
           fuel: 9,
           speed: 250,
@@ -106,7 +108,8 @@ module.exports = {
           modelName: "Cayyene",
           imageUrl:
             "https://toppng.com/uploads/preview/2017-porsche-cayenne-turbo-s-blue-black-porsche-suv-2018-11563985089sbvmfmjzid.png",
-          soundUrl: "url.por.Cayyenesound",
+          soundUrl:
+            "https://res.cloudinary.com/dkdzt4lca/video/upload/v1638264079/Carso/cayenne_sound_1_jhv9an.mp3",
           capacity: 3000,
           fuel: 14.1,
           speed: 245,
