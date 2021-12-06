@@ -35,7 +35,7 @@ router.post("/login", async (req, res, next) => {
 });
 
 router.post("/signup", async (req, res) => {
-  const { email, password, name } = req.body;
+  const { email, password, name, isSeller } = req.body;
   if (!email || !password || !name) {
     return res.status(400).send("Please provide an email, password and a name");
   }
@@ -45,6 +45,7 @@ router.post("/signup", async (req, res) => {
       email,
       password: bcrypt.hashSync(password, SALT_ROUNDS),
       name,
+      isSeller,
     });
 
     delete newUser.dataValues["password"]; // don't send back the password hash
@@ -73,3 +74,12 @@ router.get("/me", authMiddleware, async (req, res) => {
 });
 
 module.exports = router;
+
+router.patch("/update/:id", async (req, res) => {
+  const newUser = await User.findByPk(req.params.id);
+
+  const { phone, address, name } = req.body;
+  await newUser.update({ name, phone, address });
+
+  return res.status(200).send({ newUser });
+});
