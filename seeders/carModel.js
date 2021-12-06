@@ -8,9 +8,9 @@ module.exports = {
         {
           modelName: "R8",
           imageUrl:
-            "https://www.pngkit.com/png/full/273-2731532_audi-r8-new-car-image-audi-r8-transparent.png",
+            "https://res.cloudinary.com/dkdzt4lca/image/upload/v1638622741/Carso/AUDI-RB_xxf8o0.png",
           soundUrl:
-            "https://res.cloudinary.com/dkdzt4lca/video/upload/v1638264023/Carso/Audi_R8_Engine_Sound_nflmrl.mp3",
+            "https://res.cloudinary.com/dkdzt4lca/video/upload/v1638575556/Carso/Audi_R8_Engine_Sound_hm6lle.mp3",
           capacity: 5200,
           fuel: 12.9,
           speed: 331,
@@ -23,9 +23,9 @@ module.exports = {
         {
           modelName: "RS3",
           imageUrl:
-            "https://w7.pngwing.com/pngs/168/50/png-transparent-audi-rs3-car-audi-sportback-concept-2018-audi-rs-3-audi-compact-car-blue-sedan.png",
+            "https://res.cloudinary.com/dkdzt4lca/image/upload/v1638622742/Carso/AUDI-RS3_weuhax.png",
           soundUrl:
-            "https://res.cloudinary.com/dkdzt4lca/video/upload/v1638264024/Carso/190131_Audi_RS3neu_engineonidleengineoff_zi0398.wav",
+            "https://res.cloudinary.com/dkdzt4lca/video/upload/v1638575564/Carso/R3_d54kbt.wav",
           capacity: 2500,
           fuel: 9,
           speed: 250,
@@ -38,8 +38,9 @@ module.exports = {
         {
           modelName: "S500",
           imageUrl:
-            "https://purepng.com/public/uploads/large/51506279779c6rntanvyoznezpyppnhohayyxtzb1fw4pyobj8vrqyxl5jgyo0x8wqtg9rcqmi0ddeo5f0xplr20eua2fmf3maooz8epuincm94.png",
-          soundUrl: "url.benz.S500sound",
+            "https://res.cloudinary.com/dkdzt4lca/image/upload/v1638622738/Carso/MERCEDES-BENZ-S500_tnc1gt.png",
+          soundUrl:
+            "https://res.cloudinary.com/dkdzt4lca/video/upload/v1638575561/Carso/Benz_c56hdv.wav",
           capacity: 3000,
           fuel: 7.8,
           speed: 250,
@@ -52,8 +53,9 @@ module.exports = {
         {
           modelName: "740li",
           imageUrl:
-            "https://purepng.com/public/uploads/large/purepng.com-bmw-7-series-carcarbmwvehicletransport-961524660822bix0u.png",
-          soundUrl: "url.bmw.740lisound",
+            "https://res.cloudinary.com/dkdzt4lca/image/upload/v1638622738/Carso/BMW-740LI_tgmlhw.png",
+          soundUrl:
+            "https://res.cloudinary.com/dkdzt4lca/video/upload/v1638575557/Carso/BMW_fqgifc.mp3",
           capacity: 3000,
           fuel: 8.8,
           speed: 250,
@@ -64,10 +66,11 @@ module.exports = {
           carBrandId: 3,
         },
         {
-          modelName: "Romma",
+          modelName: "Roma",
           imageUrl:
-            "https://media-server2.modenamotorsgmbh.com/14030-home_default/ferrari-roma.jpg",
-          soundUrl: "url.rommasound",
+            "https://res.cloudinary.com/dkdzt4lca/image/upload/v1638622741/Carso/FERRARI-ROMA_jy8dxa.png",
+          soundUrl:
+            "https://res.cloudinary.com/dkdzt4lca/video/upload/v1638575565/Carso/Roma_aculaa.wav",
           capacity: 3900,
           fuel: 10.8,
           speed: 300,
@@ -80,8 +83,9 @@ module.exports = {
         {
           modelName: "Urus",
           imageUrl:
-            "https://www.lamborghini.com/sites/it-en/files/DAM/lamborghini/facelift_2019/model_detail/menu/09_09/menu_urus.jpg",
-          soundUrl: "url.lambo.urussound",
+            "https://res.cloudinary.com/dkdzt4lca/image/upload/v1638622746/Carso/LAMBO-URUS_fgdry0.png",
+          soundUrl:
+            "https://res.cloudinary.com/dkdzt4lca/video/upload/v1638575563/Carso/Urus_tvgyfh.wav",
           capacity: 4000,
           fuel: 12.7,
           speed: 305,
@@ -93,8 +97,10 @@ module.exports = {
         },
         {
           modelName: "Aventador",
-          imageUrl: "https://image.pngaaa.com/682/2262682-middle.png",
-          soundUrl: "url.lambo.avantadorsound",
+          imageUrl:
+            "https://res.cloudinary.com/dkdzt4lca/image/upload/v1638622737/Carso/LAMBO-AVENTADOR_y5cr57.png",
+          soundUrl:
+            "https://res.cloudinary.com/dkdzt4lca/video/upload/v1638575561/Carso/Avatador_nq98fv.wav",
           capacity: 6500,
           fuel: 18,
           speed: 350,
@@ -107,9 +113,9 @@ module.exports = {
         {
           modelName: "Cayyene",
           imageUrl:
-            "https://toppng.com/uploads/preview/2017-porsche-cayenne-turbo-s-blue-black-porsche-suv-2018-11563985089sbvmfmjzid.png",
+            "https://res.cloudinary.com/dkdzt4lca/image/upload/v1638622743/Carso/PORSCHE-KEYYENE_tk0wnl.png",
           soundUrl:
-            "https://res.cloudinary.com/dkdzt4lca/video/upload/v1638264079/Carso/cayenne_sound_1_jhv9an.mp3",
+            "https://res.cloudinary.com/dkdzt4lca/video/upload/v1638575560/Carso/cayenne_sound_1_llcdsl.mp3",
           capacity: 3000,
           fuel: 14.1,
           speed: 245,

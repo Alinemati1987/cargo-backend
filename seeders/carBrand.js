@@ -8,7 +8,7 @@ module.exports = {
         {
           brandName: "Audi",
           brandLogoUrl:
-            "https://www.carlogos.org/logo/Audi-logo-2009-1920x1080.png",
+            "https://res.cloudinary.com/dkdzt4lca/image/upload/v1638575580/Carso/Audi-logo_x9scbk.png",
           buyUrl: "https://www.audi.nl/nl/web/nl/modellen.html",
           ribbonUrl:
             "https://res.cloudinary.com/dkdzt4lca/image/upload/v1638232686/Carso/audi_ribbon_ldo3rv.jpg",
@@ -18,7 +18,7 @@ module.exports = {
         {
           brandName: "Mercedes-Benz",
           brandLogoUrl:
-            "https://www.carlogos.org/logo/Mercedes-Benz-logo-2011-1920x1080.png",
+            "https://res.cloudinary.com/dkdzt4lca/image/upload/v1638575580/Carso/Benz-logo_xdoqf0.png",
           buyUrl:
             "https://www.mercedes-benz.nl/passengercars.html?csref=mbcom_generic_pc&group=all&subgroup=see-all&view=BODYTYPE#modeltabs",
           ribbonUrl:
@@ -29,7 +29,7 @@ module.exports = {
         {
           brandName: "BMW",
           brandLogoUrl:
-            "https://www.carlogos.org/car-logos/bmw-logo-2020-blue-white.png",
+            "https://res.cloudinary.com/dkdzt4lca/image/upload/v1638575580/Carso/BMW-logo_fzpzik.png",
           buyUrl:
             "https://www.bmw.nl/nl/all-models.html?tl=grp-wdpl-bcom-mix-mn-.-nscf-.-.-&detail=7_BMW-7-Serie-Sedan",
           ribbonUrl:
@@ -40,7 +40,7 @@ module.exports = {
         {
           brandName: "Lamborghini",
           brandLogoUrl:
-            "https://www.carlogos.org/car-logos/lamborghini-logo-1000x1100.png",
+            "https://res.cloudinary.com/dkdzt4lca/image/upload/v1638575580/Carso/Lambo-logo_copy_hvtr7i.png",
           buyUrl: "https://www.lamborghini.com/en-en",
           ribbonUrl:
             "https://res.cloudinary.com/dkdzt4lca/image/upload/v1638232686/Carso/lambo_ribbon_zbzj1w.jpg",
@@ -50,7 +50,7 @@ module.exports = {
         {
           brandName: "Porsche",
           brandLogoUrl:
-            "https://www.carlogos.org/car-logos/porsche-logo-2100x1100.png",
+            "https://res.cloudinary.com/dkdzt4lca/image/upload/v1638575581/Carso/Porsche-logo_tv6trf.png",
           buyUrl:
             "https://www.porsche.com/uk/accessoriesandservice/owningyourporsche/",
           ribbonUrl:
@@ -61,7 +61,7 @@ module.exports = {
         {
           brandName: "Ferrari",
           brandLogoUrl:
-            "https://www.carlogos.org/car-logos/ferrari-logo-750x1100.png",
+            "https://res.cloudinary.com/dkdzt4lca/image/upload/v1638575580/Carso/Ferrari-logo_copy_tsdcpw.png",
           buyUrl: "https://www.ferrari.com/en-NL/auto/ferrari-roma",
           ribbonUrl:
             "https://res.cloudinary.com/dkdzt4lca/image/upload/v1638232686/Carso/ferrari_ribbon_mwzjov.jpg",
