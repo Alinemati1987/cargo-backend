@@ -1,5 +1,5 @@
 const express = require("express");
-const PORT = 4000 || process.env.PORT;
+const PORT = process.env.PORT || 4000;
 
 const corsMiddleware = require("cors");
 const loggerMiddleWare = require("morgan");
