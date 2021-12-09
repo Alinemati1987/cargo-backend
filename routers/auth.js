@@ -77,9 +77,32 @@ module.exports = router;
 
 router.patch("/update/:id", async (req, res) => {
   const newUser = await User.findByPk(req.params.id);
+  const { phone, address, name, password } = req.body;
+  // console.log(newUser);
+  // console.log("phone is:", newUser.name);
 
-  const { phone, address, name } = req.body;
-  await newUser.update({ name, phone, address });
+  // const { password } = req.body;
+  // const newPassword = bcrypt.hashSync(password, SALT_ROUNDS);
+  // if (password === "" || password === null || password === undefined) {
+  //   await newUser.update(req.body);
+  // } else {
+  //   await newUser.update(req.body, password);
+  // }
+  console.log("req phone is", phone);
+  console.log("req address is", address);
+  console.log("req name is", name);
+  console.log("req password is", password);
+
+  if (password === "" || password === null || password === undefined) {
+    await newUser.update({ name, phone, address });
+  } else {
+    await newUser.update({
+      name,
+      phone,
+      address,
+      password: bcrypt.hashSync(password, SALT_ROUNDS),
+    });
+  }
 
   return res.status(200).send({ newUser });
 });
