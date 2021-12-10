@@ -81,13 +81,6 @@ router.patch("/update/:id", async (req, res) => {
   // console.log(newUser);
   // console.log("phone is:", newUser.name);
 
-  // const { password } = req.body;
-  // const newPassword = bcrypt.hashSync(password, SALT_ROUNDS);
-  // if (password === "" || password === null || password === undefined) {
-  //   await newUser.update(req.body);
-  // } else {
-  //   await newUser.update(req.body, password);
-  // }
   console.log("req phone is", phone);
   console.log("req address is", address);
   console.log("req name is", name);
@@ -105,4 +98,17 @@ router.patch("/update/:id", async (req, res) => {
   }
 
   return res.status(200).send({ newUser });
+});
+
+router.delete("/user/:id", async (req, res) => {
+  const id = parseInt(req.params.id);
+  const reqUser = await User.findByPk(id);
+
+  console.log("del req user is", reqUser);
+
+  const deletedUser = await reqUser.destroy();
+
+  return res
+    .status(200)
+    .send({ message: "The user is deleted", delUser: deletedUser });
 });
