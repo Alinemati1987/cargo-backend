@@ -45,4 +45,38 @@ router.get("/:modelName/:carModelId", async (req, res, next) => {
   }
 });
 
+router.get("/purchase/:userId/:kitId", async (req, res, next) => {
+  try {
+    const { userId, kitId } = req.params;
+
+    // console.log("userId is", userId);
+    // console.log("kitId is", kitId);
+
+    if (isNaN(parseInt(userId)) || isNaN(parseInt(kitId))) {
+      return res
+        .status(400)
+        .send({ message: "User id or kit id is not a number" });
+    }
+
+    const specificKitsAndUser = await purchase.findAll({
+      where: {
+        userId: userId,
+      },
+      include: {
+        model: kit,
+      },
+      // order: [[purchase, "createdAt", "DESC"]],
+    });
+
+    specificKitsAndUser.length === 0
+      ? res.status(404).send(`Nothing found`)
+      : res
+          .status(200)
+          .send({ message: "Purchase lists created", specificKitsAndUser });
+  } catch (error) {
+    console.log("Error", error);
+    next(error);
+  }
+});
+
 module.exports = router;
